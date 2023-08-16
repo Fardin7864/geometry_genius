@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- css tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .font-inter{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-inter">
+    
+    <div class="flex justify-between px-8 bg-[#1090D633] m-4 p-2 rounded-md items-center">
+        <h1 class="text-3xl font-bold leading-7">Interactive<br><span class="text-xl text-slate-500">Geometry Genius</span></h1>
+        <button class="btn btn-active btn-primary text-sm font-bold text-white">Blog</button>
+    </div>
+    <!-- Calculeting section -->
+    <section class="flex flex-row gap-3">
+        <div class="grid grid-cols-3 grid-rows-2 max-w-7xl justify-evenly gap-3 p-4">
+            <!-- Triangle 1 -->
+            <div class="card bg-base-100 shadow-xl m-0">
+                <figure class="px-10 pt-10">
+                  <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-2xl text-[#414141]">Triangle</h2>
+                  <p class="text-base text-[#414141] leading-3">Area (A) = 0.5 x b x h</p>
+                  <div class="flex items-center w-9/12 justify-center gap-2">
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="b">
+                    <label for="b">cm</label>
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="h">
+                    <label for="b">cm</label>
+                  </div>
+                    <button class="btn btn-primary text-base text-white font-bold w-9/12 h-12 rounded-lg bg-[#1090D8]">Calculete</button>
+                  
+                </div>
+              </div>
+            <!-- Rectangle 2 -->
+            <div class="card bg-base-100 shadow-xl m-0">
+                <figure class="px-10 pt-10">
+                  <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-2xl text-[#414141]">Rectangle</h2>
+                  <p class="text-base text-[#414141] leading-3">Area (A) = w x l</p>
+                  <div class="flex items-center w-9/12 justify-center gap-2">
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="w">
+                    <label for="b">cm</label>
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="l">
+                    <label for="b">cm</label>
+                  </div>
+                    <button class="btn btn-primary text-base text-white font-bold w-9/12 h-12 rounded-lg bg-[#1090D8]">Calculete</button>
+                  
+                </div>
+              </div>
+            <!-- Parallelogram 3 -->
+            <div class="card bg-base-100 shadow-xl m-0">
+                <figure class="px-10 pt-10">
+                  <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-2xl text-[#414141]">Parallelogram</h2>
+                  <p class="text-base text-[#414141] leading-3">Area (A) = b x h</p>
+                  <div class="flex items-center w-9/12 justify-center gap-2">
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="b">
+                    <label for="b">cm</label>
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="h">
+                    <label for="b">cm</label>
+                  </div>
+                    <button class="btn btn-primary text-base text-white font-bold w-9/12 h-12 rounded-lg bg-[#1090D8]">Calculete</button>
+                  
+                </div>
+              </div>
+            <!-- Rhombus 1 -->
+            <div class="card bg-base-100 shadow-xl m-0">
+                <figure class="px-10 pt-10">
+                  <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-2xl text-[#414141]">Rhombus</h2>
+                  <p class="text-base text-[#414141] leading-3">Area (A) = 0.5 x d1 x d2</p>
+                  <div class="flex items-center w-9/12 justify-center gap-2">
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="d1">
+                    <label for="b">cm</label>
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="d2">
+                    <label for="b">cm</label>
+                  </div>
+                    <button class="btn btn-primary text-base text-white font-bold w-9/12 h-12 rounded-lg bg-[#1090D8]">Calculete</button>
+                  
+                </div>
+              </div>
+            <!-- Pentagon 1 -->
+            <div class="card bg-base-100 shadow-xl m-0">
+                <figure class="px-10 pt-10">
+                  <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-2xl text-[#414141]">Pentagon</h2>
+                  <p class="text-base text-[#414141] leading-3">Area (A) = 0.5 x p x b</p>
+                  <div class="flex items-center w-9/12 justify-center gap-2">
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="p">
+                    <label for="b">cm</label>
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="b">
+                    <label for="b">cm</label>
+                  </div>
+                    <button class="btn btn-primary text-base text-white font-bold w-9/12 h-12 rounded-lg bg-[#1090D8]">Calculete</button>
+                  
+                </div>
+              </div>
+            <!-- Ellipse 1 -->
+            <div class="card bg-base-100 shadow-xl m-0">
+                <figure class="px-10 pt-10">
+                  <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-2xl text-[#414141]">Ellipse</h2>
+                  <p class="text-base text-[#414141] leading-3 flex">Area (A) = <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 16 12" fill="none">
+                    <path d="M15.1102 1.73103C15.6006 1.73197 15.999 1.3488 16 0.875317C16.0007 0.401836 15.6041 0.0172503 15.1136 0.0163071L6.23256 0.000272915C4.39578 -0.00302828 2.31254 -0.00680105 0.272293 1.95527C-0.0811408 2.28373 -0.091888 2.8263 0.248112 3.1675C0.588357 3.5087 1.15038 3.51931 1.50382 3.19085C1.51139 3.18401 1.51872 3.17717 1.5258 3.16986C2.48376 2.22172 3.80639 1.70014 5.17812 1.72961L3.55896 11.0002C3.47714 11.4664 3.80224 11.9083 4.28488 11.9873C4.28562 11.9873 4.28635 11.9875 4.28733 11.9875C4.33593 11.996 4.38527 12 4.43486 12C4.86841 11.9998 5.23845 11.6975 5.31026 11.2848L6.98144 1.71641L10.6697 1.72301L10.6545 9.43924C10.6027 10.6015 11.3961 11.6418 12.5612 11.9394C12.7189 11.9726 12.8802 11.9894 13.0416 11.9889C13.7631 11.9901 14.9783 11.6741 15.8957 9.81722C16.1089 9.39114 15.9238 8.87875 15.4824 8.6729C15.0411 8.46705 14.5105 8.64578 14.2973 9.07187C14.2963 9.07376 14.2954 9.07564 14.2944 9.07753C13.8069 10.0625 13.2651 10.3331 12.9549 10.2674C12.6085 10.1365 12.3946 9.79954 12.4307 9.44254L12.4459 1.72631L15.1102 1.73103Z" fill="#414141"/>
+                  </svg>ab</p>
+                  <div class="flex items-center w-9/12 justify-center gap-2">
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="a">
+                    <label for="b">cm</label>
+                    <input type="number" name="b" id="" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="b">
+                    <label for="b">cm</label>
+                  </div>
+                    <button class="btn btn-primary text-base text-white font-bold w-9/12 h-12 rounded-lg bg-[#1090D8]">Calculete</button>
+                  
+                </div>
+              </div>
+        </div>
+        
+            <!-- card 1 -->
+            <div class="card w-80 h-80 bg-base-100 shadow-xl m-0 p-4 mr-3">
+                <h2 class="card-title text-2xl text-[#414141]">Area Calculation</h2>
+               <div>
+                <p>1. </p>
+               </div>
+            </div>
+
+    </section>
+
+
+
+
+
+</body>
+</html>
