@@ -7,6 +7,7 @@ function getInputValueById (inputId){
     return inputValue;
 }
 
+// withOut clear the value 
 function getInputValueByIdWt (inputId){
     const inputValueString = document.getElementById(inputId);
     const inputValue = parseFloat(inputValueString.value);
@@ -24,6 +25,61 @@ function setInnerTextById(inputId,outputId){
     const outputVal = document.getElementById(outputId);
     outputVal.innerText = inputVal;
 }
+
+// comvert cm to m
+function convertCmToMetersById(outputFildId) {
+    const outputFildValueString = document.getElementById(outputFildId).innerText;
+    const outputFildValue = parseFloat(outputFildValueString);
+    const result = outputFildValue / 10000;
+    outputFildValueString = result;
+}
+
+// const btns = document.querySelectorAll('.btnCmToM');
+
+// btns.forEach((btn, index) => {
+
+//      btn.addEventListener('click', () => {
+            
+//         });
+// });
+
+
+
+
+// Get all buttons with the class 'btnCmToM'
+const buttons = document.querySelectorAll('.btnCmToM');
+
+// Loop through each button
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Find the parent p element containing both the span and the button
+        const parentElement = button.closest('p');
+
+        // Get the corresponding span element based on the parent p element
+        const span = parentElement.querySelector('span');
+
+        // Get the current area in cm² from the span's innerText
+        const currentAreaCm2 = parseFloat(span.innerText);
+
+        // Convert the area to m² (divide by 10000)
+        const areaM2 = currentAreaCm2 / 10000;
+
+        // Update the span's innerText with the converted area
+        span.innerText = areaM2.toFixed(5) + 'm²';
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Triangle Calculete
 document.getElementById('btn-triangle').addEventListener('click',() => { 
