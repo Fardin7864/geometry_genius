@@ -34,6 +34,7 @@
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl text-[#414141]">Triangle</h2>
                   <p class="text-base text-[#414141] leading-3">Area (A) = 0.5 x b x h</p>
+                  <p class="text-base text-[#414141] leading-3"> b =<span id="triangle-output-b">00</span>cm h = <span id="triangle-output-h">00</span>cm</p>
                   <div class="flex items-center w-9/12 justify-center gap-2">
                     <input type="number" name="b" id="triangle-input-b" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="b">
                     <label for="b">cm</label>
@@ -52,6 +53,8 @@
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl text-[#414141]">Rectangle</h2>
                   <p class="text-base text-[#414141] leading-3">Area (A) = w x l</p>
+                  <p class="text-base text-[#414141] leading-3"> w =<span id="rectangle-output-w">00</span>cm l = <span id="rectangle-output-l">00</span>cm</p>
+
                   <div class="flex items-center w-9/12 justify-center gap-2">
                     <input type="number" name="b" id="rectangle-input-w" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="w">
                     <label for="b">cm</label>
@@ -70,6 +73,8 @@
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl text-[#414141]">Parallelogram</h2>
                   <p class="text-base text-[#414141] leading-3">Area (A) = b x h</p>
+                  <p class="text-base text-[#414141] leading-3"> b =<span id="parallelogram-output-b">00</span>cm h = <span id="parallelogram-output-h">00</span>cm</p>
+
                   <div class="flex items-center w-9/12 justify-center gap-2">
                     <input type="number" name="b" id="parallelogram-input-b" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="b">
                     <label for="b">cm</label>
@@ -88,6 +93,8 @@
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl text-[#414141]">Rhombus</h2>
                   <p class="text-base text-[#414141] leading-3">Area (A) = 0.5 x d1 x d2</p>
+                  <p class="text-base text-[#414141] leading-3"> b =<span id="rhombus-output-b">00</span>cm h = <span id="rhombus-output-h">00</span>cm</p>
+
                   <div class="flex items-center w-9/12 justify-center gap-2">
                     <input type="number" name="b" id="rhombus-input-b" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="d1">
                     <label for="b">cm</label>
@@ -106,6 +113,8 @@
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl text-[#414141]">Pentagon</h2>
                   <p class="text-base text-[#414141] leading-3">Area (A) = 0.5 x p x b</p>
+                  <p class="text-base text-[#414141] leading-3"> p =<span id="pentagon-output-b">00</span>cm b = <span id="pentagon-output-h">00</span>cm</p>
+
                   <div class="flex items-center w-9/12 justify-center gap-2">
                     <input type="number" name="b" id="pentagon-input-b" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="p">
                     <label for="b">cm</label>
@@ -126,6 +135,8 @@
                   <p class="text-base text-[#414141] leading-3 flex">Area (A) = <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 16 12" fill="none">
                     <path d="M15.1102 1.73103C15.6006 1.73197 15.999 1.3488 16 0.875317C16.0007 0.401836 15.6041 0.0172503 15.1136 0.0163071L6.23256 0.000272915C4.39578 -0.00302828 2.31254 -0.00680105 0.272293 1.95527C-0.0811408 2.28373 -0.091888 2.8263 0.248112 3.1675C0.588357 3.5087 1.15038 3.51931 1.50382 3.19085C1.51139 3.18401 1.51872 3.17717 1.5258 3.16986C2.48376 2.22172 3.80639 1.70014 5.17812 1.72961L3.55896 11.0002C3.47714 11.4664 3.80224 11.9083 4.28488 11.9873C4.28562 11.9873 4.28635 11.9875 4.28733 11.9875C4.33593 11.996 4.38527 12 4.43486 12C4.86841 11.9998 5.23845 11.6975 5.31026 11.2848L6.98144 1.71641L10.6697 1.72301L10.6545 9.43924C10.6027 10.6015 11.3961 11.6418 12.5612 11.9394C12.7189 11.9726 12.8802 11.9894 13.0416 11.9889C13.7631 11.9901 14.9783 11.6741 15.8957 9.81722C16.1089 9.39114 15.9238 8.87875 15.4824 8.6729C15.0411 8.46705 14.5105 8.64578 14.2973 9.07187C14.2963 9.07376 14.2954 9.07564 14.2944 9.07753C13.8069 10.0625 13.2651 10.3331 12.9549 10.2674C12.6085 10.1365 12.3946 9.79954 12.4307 9.44254L12.4459 1.72631L15.1102 1.73103Z" fill="#414141"/>
                   </svg>ab</p>
+                  <p class="text-base text-[#414141] leading-3"> a =<span id="ellipse-output-b">00</span>cm b = <span id="ellipse-output-h">00</span>cm</p>
+
                   <div class="flex items-center w-9/12 justify-center gap-2">
                     <input type="number" name="b" id="ellipse-input-b" class="w-24 h-8 rounded-md bg-[#F1F1F1] pl-3" placeholder="a">
                     <label for="b">cm</label>
@@ -138,7 +149,7 @@
               </div>
         </div>
         
-            <!-- card 1 -->
+            <!-- Results card -->
             <div class="card w-96 h-80 bg-base-100 shadow-xl m-0 p-4 mr-3">
                 <h2 class="card-title text-2xl text-[#414141]">Area Calculation</h2>
                <div class="leading-10">
