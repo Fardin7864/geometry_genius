@@ -26,25 +26,6 @@ function setInnerTextById(inputId,outputId){
     outputVal.innerText = inputVal;
 }
 
-// comvert cm to m
-function convertCmToMetersById(outputFildId) {
-    const outputFildValueString = document.getElementById(outputFildId).innerText;
-    const outputFildValue = parseFloat(outputFildValueString);
-    const result = outputFildValue / 10000;
-    outputFildValueString = result;
-}
-
-// const btns = document.querySelectorAll('.btnCmToM');
-
-// btns.forEach((btn, index) => {
-
-//      btn.addEventListener('click', () => {
-            
-//         });
-// });
-
-
-
 
 // Get all buttons with the class 'btnCmToM'
 const buttons = document.querySelectorAll('.btnCmToM');
@@ -70,17 +51,6 @@ buttons.forEach((button, index) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Triangle Calculete
 document.getElementById('btn-triangle').addEventListener('click',() => { 
 
@@ -92,10 +62,7 @@ document.getElementById('btn-triangle').addEventListener('click',() => {
     const result = (x * 0.5);
     document.getElementById('triangle-result').innerText = result;
     
-
-
  })
-
 
 // Rectangle Calculete
 document.getElementById('btn-rectangle').addEventListener('click',() => { 
@@ -119,7 +86,6 @@ document.getElementById('btn-rectangle').addEventListener('click',() => {
      document.getElementById('parallelogram-result').innerText = x;
   })
  
-
   // Rhombus Calculete
 document.getElementById('btn-rhombus').addEventListener('click',() => { 
 
@@ -132,6 +98,7 @@ document.getElementById('btn-rhombus').addEventListener('click',() => {
     document.getElementById('rhombus-result').innerText = result;
 
  })
+
   // Pentagon Calculete
 document.getElementById('btn-pentagon').addEventListener('click',() => { 
     //  Update base and height outputs using setInnerTextById
@@ -144,7 +111,6 @@ document.getElementById('btn-pentagon').addEventListener('click',() => {
     document.getElementById('pentagon-result').innerText = result;
 
  })
- 
  
  // Ellipse Calculete
 document.getElementById('btn-ellipse').addEventListener('click',() => { 
